@@ -15,6 +15,38 @@ searchBar.name = 'query';
 
 heading.insertAdjacentElement('afterend', searchBar);
 
+const subHeadings = document.querySelectorAll('dt > a');
+const subHeadingMap = {};
+subHeadings.forEach((subHeading) => {
+    subHeadingMap[subHeading.name] = subHeading;
+});
+
+const scrollIntoNavEntry = (e) => {
+    subHeadingMap[e.target.textContent].scrollIntoView();
+}
+
+const subHeadingNavigation = document.createElement('div');
+subHeadingNavigation.classList.add('meta-koha-nav');
+Array.from(Object.keys(subHeadingMap)).forEach((subHeading) => {
+    const entry = document.createElement('a');
+    entry.classList.add('meta-koha-nav-entry');
+    entry.textContent = subHeading;
+    entry.addEventListener('click', scrollIntoNavEntry);
+    subHeadingNavigation.appendChild(entry);
+});
+
+searchBar.insertAdjacentElement('afterend', subHeadingNavigation);
+
+const backToTop = () => {
+    heading.scrollIntoView();
+}
+
+const backToTopButton = document.createElement('button');
+backToTopButton.classList.add('meta-koha-nav-back-to-top');
+backToTopButton.textContent = 'Back to Top ⬆';
+backToTopButton.addEventListener('click', backToTop);
+document.body.appendChild(backToTopButton);
+
 /** Remove useless textNodes from dds */
 const dds = document.querySelectorAll('dd');
 dds.forEach((dd) => { Array.from(dd.childNodes).forEach( node => { if (node.nodeType === 3) dd.removeChild(node) }); })
