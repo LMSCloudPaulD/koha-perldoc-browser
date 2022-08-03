@@ -11,9 +11,9 @@
 <link rel="alternate stylesheet" title="whtgrng" type="text/css" href="_whtgrng.css" media="all" >
 <link rel="alternate stylesheet" title="blkgrng" type="text/css" href="_blkgrng.css" media="all" >
 <link rel="alternate stylesheet" title="grygrnw" type="text/css" href="_grygrnw.css" media="all" >
-<link rel="alternate stylesheet" title="grygrnw" type="text/css" href="_grygrnw.css" media="all" >
-<link rel="alternate stylesheet" title="grygrnw" type="text/css" href="_grygrnw.css" media="all" >
-<link rel="stylesheet" href="main.css">
+<link rel="alternate stylesheet" title="blkbluw" type="text/css" href="_blkbluw.css" media="all" >
+<link rel="alternate stylesheet" title="blkbluw" type="text/css" href="_blkbluw.css" media="all" >
+
 
 <script type="text/javascript" src="_podly.js"></script>
 
@@ -173,6 +173,7 @@
   <a href="./C4/SIP/ILS.html">C4::SIP::ILS</a>&nbsp;&nbsp;
   <a href="./C4/SIP/ILS/Item.html">C4::SIP::ILS::Item</a>&nbsp;&nbsp;
   <a href="./C4/SIP/ILS/Patron.html">C4::SIP::ILS::Patron</a>&nbsp;&nbsp;
+  <a href="./C4/SIP/ILS/Transaction/Checkin.html">C4::SIP::ILS::Transaction::Checkin</a>&nbsp;&nbsp;
   <a href="./C4/SIP/Logger.html">C4::SIP::Logger</a>&nbsp;&nbsp;
   <a href="./C4/SIP/Trapper.html">C4::SIP::Trapper</a>&nbsp;&nbsp;
   <a href="./C4/SMS.html">C4::SMS</a>&nbsp;&nbsp;
@@ -221,7 +222,6 @@
   <a href="./circ/branchoverdues.html">circ::branchoverdues</a>&nbsp;&nbsp;
   <a href="./circ/returns.html">circ::returns</a>&nbsp;&nbsp;
   <a href="./circ/view_holdsqueue.html">circ::view_holdsqueue</a>&nbsp;&nbsp;
-  <a href="./circ/ysearch.html">circ::ysearch</a>&nbsp;&nbsp;
 </dd>
 
 <dt><a name="docs">docs</a></dt>
@@ -295,6 +295,7 @@
   <a href="./Koha/ArticleRequests.html">Koha::ArticleRequests</a>&nbsp;&nbsp;
   <a href="./Koha/AudioAlert.html">Koha::AudioAlert</a>&nbsp;&nbsp;
   <a href="./Koha/AudioAlerts.html">Koha::AudioAlerts</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/TwoFactorAuth.html">Koha::Auth::TwoFactorAuth</a>&nbsp;&nbsp;
   <a href="./Koha/AuthorisedValue.html">Koha::AuthorisedValue</a>&nbsp;&nbsp;
   <a href="./Koha/AuthorisedValueCategories.html">Koha::AuthorisedValueCategories</a>&nbsp;&nbsp;
   <a href="./Koha/AuthorisedValueCategory.html">Koha::AuthorisedValueCategory</a>&nbsp;&nbsp;
@@ -317,9 +318,15 @@
   <a href="./Koha/BackgroundJob/BatchDeleteItem.html">Koha::BackgroundJob::BatchDeleteItem</a>&nbsp;&nbsp;
   <a href="./Koha/BackgroundJob/BatchUpdateAuthority.html">Koha::BackgroundJob::BatchUpdateAuthority</a>&nbsp;&nbsp;
   <a href="./Koha/BackgroundJob/BatchUpdateBiblio.html">Koha::BackgroundJob::BatchUpdateBiblio</a>&nbsp;&nbsp;
+  <a href="./Koha/BackgroundJob/BatchUpdateBiblioHoldsQueue.html">Koha::BackgroundJob::BatchUpdateBiblioHoldsQueue</a>&nbsp;&nbsp;
   <a href="./Koha/BackgroundJob/BatchUpdateItem.html">Koha::BackgroundJob::BatchUpdateItem</a>&nbsp;&nbsp;
+  <a href="./Koha/BackgroundJob/UpdateElasticIndex.html">Koha::BackgroundJob::UpdateElasticIndex</a>&nbsp;&nbsp;
   <a href="./Koha/BackgroundJobs.html">Koha::BackgroundJobs</a>&nbsp;&nbsp;
   <a href="./Koha/Biblio.html">Koha::Biblio</a>&nbsp;&nbsp;
+  <a href="./Koha/Biblio/ItemGroup.html">Koha::Biblio::ItemGroup</a>&nbsp;&nbsp;
+  <a href="./Koha/Biblio/ItemGroup/Item.html">Koha::Biblio::ItemGroup::Item</a>&nbsp;&nbsp;
+  <a href="./Koha/Biblio/ItemGroup/Items.html">Koha::Biblio::ItemGroup::Items</a>&nbsp;&nbsp;
+  <a href="./Koha/Biblio/ItemGroups.html">Koha::Biblio::ItemGroups</a>&nbsp;&nbsp;
   <a href="./Koha/Biblio/Metadata.html">Koha::Biblio::Metadata</a>&nbsp;&nbsp;
   <a href="./Koha/Biblio/Metadatas.html">Koha::Biblio::Metadatas</a>&nbsp;&nbsp;
   <a href="./Koha/BiblioFramework.html">Koha::BiblioFramework</a>&nbsp;&nbsp;
@@ -344,6 +351,8 @@
   <a href="./Koha/Charges/Sales.html">Koha::Charges::Sales</a>&nbsp;&nbsp;
   <a href="./Koha/Checkout.html">Koha::Checkout</a>&nbsp;&nbsp;
   <a href="./Koha/Checkouts.html">Koha::Checkouts</a>&nbsp;&nbsp;
+  <a href="./Koha/Checkouts/Renewal.html">Koha::Checkouts::Renewal</a>&nbsp;&nbsp;
+  <a href="./Koha/Checkouts/Renewals.html">Koha::Checkouts::Renewals</a>&nbsp;&nbsp;
   <a href="./Koha/Checkouts/ReturnClaim.html">Koha::Checkouts::ReturnClaim</a>&nbsp;&nbsp;
   <a href="./Koha/Checkouts/ReturnClaims.html">Koha::Checkouts::ReturnClaims</a>&nbsp;&nbsp;
   <a href="./Koha/CirculationRule.html">Koha::CirculationRule</a>&nbsp;&nbsp;
@@ -377,6 +386,7 @@
   <a href="./Koha/Config.html">Koha::Config</a>&nbsp;&nbsp;
   <a href="./Koha/Config/SysPref.html">Koha::Config::SysPref</a>&nbsp;&nbsp;
   <a href="./Koha/Config/SysPrefs.html">Koha::Config::SysPrefs</a>&nbsp;&nbsp;
+  <a href="./Koha/CookieManager.html">Koha::CookieManager</a>&nbsp;&nbsp;
   <a href="./Koha/Course.html">Koha::Course</a>&nbsp;&nbsp;
   <a href="./Koha/Course/Instructor.html">Koha::Course::Instructor</a>&nbsp;&nbsp;
   <a href="./Koha/Course/Instructors.html">Koha::Course::Instructors</a>&nbsp;&nbsp;
@@ -389,7 +399,16 @@
   <a href="./Koha/CoverImages.html">Koha::CoverImages</a>&nbsp;&nbsp;
   <a href="./Koha/CsvProfile.html">Koha::CsvProfile</a>&nbsp;&nbsp;
   <a href="./Koha/CsvProfiles.html">Koha::CsvProfiles</a>&nbsp;&nbsp;
+  <a href="./Koha/CurbsidePickup.html">Koha::CurbsidePickup</a>&nbsp;&nbsp;
+  <a href="./Koha/CurbsidePickupIssue.html">Koha::CurbsidePickupIssue</a>&nbsp;&nbsp;
+  <a href="./Koha/CurbsidePickupIssues.html">Koha::CurbsidePickupIssues</a>&nbsp;&nbsp;
+  <a href="./Koha/CurbsidePickupOpeningSlot.html">Koha::CurbsidePickupOpeningSlot</a>&nbsp;&nbsp;
+  <a href="./Koha/CurbsidePickupOpeningSlots.html">Koha::CurbsidePickupOpeningSlots</a>&nbsp;&nbsp;
+  <a href="./Koha/CurbsidePickupPolicies.html">Koha::CurbsidePickupPolicies</a>&nbsp;&nbsp;
+  <a href="./Koha/CurbsidePickupPolicy.html">Koha::CurbsidePickupPolicy</a>&nbsp;&nbsp;
+  <a href="./Koha/CurbsidePickups.html">Koha::CurbsidePickups</a>&nbsp;&nbsp;
   <a href="./Koha/Database.html">Koha::Database</a>&nbsp;&nbsp;
+  <a href="./Koha/Database/Columns.html">Koha::Database::Columns</a>&nbsp;&nbsp;
   <a href="./Koha/DateUtils.html">Koha::DateUtils</a>&nbsp;&nbsp;
   <a href="./Koha/Desk.html">Koha::Desk</a>&nbsp;&nbsp;
   <a href="./Koha/Desks.html">Koha::Desks</a>&nbsp;&nbsp;
@@ -401,10 +420,12 @@
   <a href="./Koha/Edifact/Segment.html">Koha::Edifact::Segment</a>&nbsp;&nbsp;
   <a href="./Koha/Edifact/Transport.html">Koha::Edifact::Transport</a>&nbsp;&nbsp;
   <a href="./Koha/Email.html">Koha::Email</a>&nbsp;&nbsp;
+  <a href="./Koha/Encryption.html">Koha::Encryption</a>&nbsp;&nbsp;
   <a href="./Koha/Exception.html">Koha::Exception</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Account.html">Koha::Exceptions::Account</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Acquisition/Basket.html">Koha::Exceptions::Acquisition::Basket</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/ArticleRequest.html">Koha::Exceptions::ArticleRequest</a>&nbsp;&nbsp;
+  <a href="./Koha/Exceptions/BackgroundJob.html">Koha::Exceptions::BackgroundJob</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Checkouts/ReturnClaims.html">Koha::Exceptions::Checkouts::ReturnClaims</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Elasticsearch.html">Koha::Exceptions::Elasticsearch</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Hold.html">Koha::Exceptions::Hold</a>&nbsp;&nbsp;
@@ -421,6 +442,7 @@
   <a href="./Koha/Exceptions/SysPref.html">Koha::Exceptions::SysPref</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Token.html">Koha::Exceptions::Token</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/TransferLimit.html">Koha::Exceptions::TransferLimit</a>&nbsp;&nbsp;
+  <a href="./Koha/Exceptions/Virtualshelf.html">Koha::Exceptions::Virtualshelf</a>&nbsp;&nbsp;
   <a href="./Koha/Exporter/Record.html">Koha::Exporter::Record</a>&nbsp;&nbsp;
   <a href="./Koha/ExternalContent.html">Koha::ExternalContent</a>&nbsp;&nbsp;
   <a href="./Koha/ExternalContent/OverDrive.html">Koha::ExternalContent::OverDrive</a>&nbsp;&nbsp;
@@ -428,10 +450,14 @@
   <a href="./Koha/Filter/MARC/EmbedItems.html">Koha::Filter::MARC::EmbedItems</a>&nbsp;&nbsp;
   <a href="./Koha/Filter/MARC/EmbedItemsAvailability.html">Koha::Filter::MARC::EmbedItemsAvailability</a>&nbsp;&nbsp;
   <a href="./Koha/Filter/MARC/EmbedSeeFromHeadings.html">Koha::Filter::MARC::EmbedSeeFromHeadings</a>&nbsp;&nbsp;
+  <a href="./Koha/Filter/MARC/ExpandCodedFields.html">Koha::Filter::MARC::ExpandCodedFields</a>&nbsp;&nbsp;
+  <a href="./Koha/Filter/MARC/Index880InZebra.html">Koha::Filter::MARC::Index880InZebra</a>&nbsp;&nbsp;
   <a href="./Koha/Filter/MARC/Null.html">Koha::Filter::MARC::Null</a>&nbsp;&nbsp;
   <a href="./Koha/Filter/MARC/ViewPolicy.html">Koha::Filter::MARC::ViewPolicy</a>&nbsp;&nbsp;
   <a href="./Koha/FrameworkPlugin.html">Koha::FrameworkPlugin</a>&nbsp;&nbsp;
   <a href="./Koha/Hold.html">Koha::Hold</a>&nbsp;&nbsp;
+  <a href="./Koha/Hold/CancellationRequest.html">Koha::Hold::CancellationRequest</a>&nbsp;&nbsp;
+  <a href="./Koha/Hold/CancellationRequests.html">Koha::Hold::CancellationRequests</a>&nbsp;&nbsp;
   <a href="./Koha/Holds.html">Koha::Holds</a>&nbsp;&nbsp;
   <a href="./Koha/Illcomment.html">Koha::Illcomment</a>&nbsp;&nbsp;
   <a href="./Koha/Illcomments.html">Koha::Illcomments</a>&nbsp;&nbsp;
@@ -443,6 +469,8 @@
   <a href="./Koha/Illrequestattributes.html">Koha::Illrequestattributes</a>&nbsp;&nbsp;
   <a href="./Koha/Illrequests.html">Koha::Illrequests</a>&nbsp;&nbsp;
   <a href="./Koha/Import/Record.html">Koha::Import::Record</a>&nbsp;&nbsp;
+  <a href="./Koha/Import/Record/Item.html">Koha::Import::Record::Item</a>&nbsp;&nbsp;
+  <a href="./Koha/Import/Record/Items.html">Koha::Import::Record::Items</a>&nbsp;&nbsp;
   <a href="./Koha/Import/Record/Match.html">Koha::Import::Record::Match</a>&nbsp;&nbsp;
   <a href="./Koha/Import/Record/Matches.html">Koha::Import::Record::Matches</a>&nbsp;&nbsp;
   <a href="./Koha/Import/Records.html">Koha::Import::Records</a>&nbsp;&nbsp;
@@ -573,6 +601,8 @@
   <a href="./Koha/REST/V1/ArticleRequests.html">Koha::REST::V1::ArticleRequests</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Auth.html">Koha::REST::V1::Auth</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Biblios.html">Koha::REST::V1::Biblios</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/Biblios/ItemGroups.html">Koha::REST::V1::Biblios::ItemGroups</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/Biblios/ItemGroups/Items.html">Koha::REST::V1::Biblios::ItemGroups::Items</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/CashRegisters/Cashups.html">Koha::REST::V1::CashRegisters::Cashups</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Checkouts.html">Koha::REST::V1::Checkouts</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/CirculationRules.html">Koha::REST::V1::CirculationRules</a>&nbsp;&nbsp;
@@ -583,6 +613,7 @@
   <a href="./Koha/REST/V1/Illbackends.html">Koha::REST::V1::Illbackends</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Illrequests.html">Koha::REST::V1::Illrequests</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/ImportBatchProfiles.html">Koha::REST::V1::ImportBatchProfiles</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ImportRecordMatches.html">Koha::REST::V1::ImportRecordMatches</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Items.html">Koha::REST::V1::Items</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Libraries.html">Koha::REST::V1::Libraries</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/OAuth.html">Koha::REST::V1::OAuth</a>&nbsp;&nbsp;
@@ -591,6 +622,7 @@
   <a href="./Koha/REST/V1/Patrons/Attributes.html">Koha::REST::V1::Patrons::Attributes</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Patrons/Holds.html">Koha::REST::V1::Patrons::Holds</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Patrons/Password.html">Koha::REST::V1::Patrons::Password</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/Patrons/Password/Expiration.html">Koha::REST::V1::Patrons::Password::Expiration</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Quotes.html">Koha::REST::V1::Quotes</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/ReturnClaims.html">Koha::REST::V1::ReturnClaims</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Stage.html">Koha::REST::V1::Stage</a>&nbsp;&nbsp;
@@ -664,6 +696,7 @@
   <a href="./Koha/Schema/Result/CashRegisterAction.html">Koha::Schema::Result::CashRegisterAction</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/CategoriesBranch.html">Koha::Schema::Result::CategoriesBranch</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Category.html">Koha::Schema::Result::Category</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/CheckoutRenewal.html">Koha::Schema::Result::CheckoutRenewal</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/CirculationRule.html">Koha::Schema::Result::CirculationRule</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/City.html">Koha::Schema::Result::City</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ClassSortRule.html">Koha::Schema::Result::ClassSortRule</a>&nbsp;&nbsp;
@@ -690,6 +723,10 @@
   <a href="./Koha/Schema/Result/CreatorImage.html">Koha::Schema::Result::CreatorImage</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/CreatorLayout.html">Koha::Schema::Result::CreatorLayout</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/CreatorTemplate.html">Koha::Schema::Result::CreatorTemplate</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/CurbsidePickup.html">Koha::Schema::Result::CurbsidePickup</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/CurbsidePickupIssue.html">Koha::Schema::Result::CurbsidePickupIssue</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/CurbsidePickupOpeningSlot.html">Koha::Schema::Result::CurbsidePickupOpeningSlot</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/CurbsidePickupPolicy.html">Koha::Schema::Result::CurbsidePickupPolicy</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Currency.html">Koha::Schema::Result::Currency</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Deletedbiblio.html">Koha::Schema::Result::Deletedbiblio</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Deletedbiblioitem.html">Koha::Schema::Result::Deletedbiblioitem</a>&nbsp;&nbsp;
@@ -701,6 +738,7 @@
   <a href="./Koha/Schema/Result/EdifactEan.html">Koha::Schema::Result::EdifactEan</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/EdifactMessage.html">Koha::Schema::Result::EdifactMessage</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ExportFormat.html">Koha::Schema::Result::ExportFormat</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/HoldCancellationRequest.html">Koha::Schema::Result::HoldCancellationRequest</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/HoldFillTarget.html">Koha::Schema::Result::HoldFillTarget</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/HouseboundProfile.html">Koha::Schema::Result::HouseboundProfile</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/HouseboundRole.html">Koha::Schema::Result::HouseboundRole</a>&nbsp;&nbsp;
@@ -717,7 +755,10 @@
   <a href="./Koha/Schema/Result/ImportRecordMatch.html">Koha::Schema::Result::ImportRecordMatch</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Issue.html">Koha::Schema::Result::Issue</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Item.html">Koha::Schema::Result::Item</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ItemBundle.html">Koha::Schema::Result::ItemBundle</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ItemCirculationAlertPreference.html">Koha::Schema::Result::ItemCirculationAlertPreference</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ItemGroup.html">Koha::Schema::Result::ItemGroup</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ItemGroupItem.html">Koha::Schema::Result::ItemGroupItem</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ItemsLastBorrower.html">Koha::Schema::Result::ItemsLastBorrower</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ItemsSearchField.html">Koha::Schema::Result::ItemsSearchField</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Itemtype.html">Koha::Schema::Result::Itemtype</a>&nbsp;&nbsp;
@@ -960,6 +1001,7 @@
 <dd>
   <a href="./misc/add_date_fields_to_marc_records.html">misc::add_date_fields_to_marc_records</a>&nbsp;&nbsp;
   <a href="./misc/admin/set_password.html">misc::admin::set_password</a>&nbsp;&nbsp;
+  <a href="./misc/background_jobs_worker.html">misc::background_jobs_worker</a>&nbsp;&nbsp;
   <a href="./misc/batchdeletebiblios.html">misc::batchdeletebiblios</a>&nbsp;&nbsp;
   <a href="./misc/batchRebuildItemsTables.html">misc::batchRebuildItemsTables</a>&nbsp;&nbsp;
   <a href="./misc/cronjobs/advance_notices.html">misc::cronjobs::advance_notices</a>&nbsp;&nbsp;
@@ -1156,7 +1198,7 @@
 </dl>
 
 
-<p class='contentsfooty'>Generated by Pod::Simple::HTMLBatch v3.43 under Perl v5.030003
-<br >At Mon Apr  4 21:07:13 2022 GMT.</p>
-<script src="kohaPerldoc.js"></script>
+<p class='contentsfooty'>Generated by Pod::Simple::HTMLBatch v3.42 under Perl v5.034000
+<br >At Wed Aug  3 19:42:34 2022 GMT.</p>
+
 </body></html>
