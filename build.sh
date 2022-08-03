@@ -26,18 +26,15 @@ cd "$SCRIPT_PATH" || exit 1
 echo "Generating documentation"
 perl -MPod::Simple::HTMLBatch -e Pod::Simple::HTMLBatch::go Koha docs || exit 1
 
+cp main.css docs/ || exit 1
+cp kohaPerldoc.js docs/ || exit 1
+
 # use regular sed on Linux; macOS uses BSD sed by default and acts strange
 echo "Inserting CSS & JS"
-INDEX_HTML=$(gsed "s/^<\/head>/<link rel=\"stylesheet\" href=\"\.\.\/main.css\"><script src=\"\.\.\/kohaPerldoc\.js\"><\/script><\/head>/g" "$SCRIPT_PATH/docs/index.html")
+INDEX_HTML=$(gsed "s/^<\/head>/<link rel=\"stylesheet\" href=\"main.css\"><script defer src=\"kohaPerldoc\.js\"><\/script><\/head>/g" "$SCRIPT_PATH/docs/index.html")
 
-echo "$INDEX_HTML" > "$SCRIPT_PATH/docs/index.html"
+echo "$INDEX_HTML" >"$SCRIPT_PATH/docs/index.html"
 
 git add . || exit 1
 git commit -m "Pull updates | $DATE" || exit 1
 git push origin main || exit 1
-
-
-
-
-
-
