@@ -102,19 +102,28 @@ entries.forEach((entry) => {
 const superindexSearch = (e) => {
   const query = searchBar.value;
 
-  Object.keys(links).forEach((link) => links[link].highlight(query));
+  // Use the filter method to create an array of matching Link objects
+  const matches = Object.values(links).filter((link) =>
+    link.text.includes(query)
+  );
+
+  // Use the forEach method to apply the highlight and show methods to the matching Link objects
+  matches.forEach((match) => {
+    match.highlight(query);
+    match.show();
+  });
 
   if (query === "") {
     Object.keys(links).forEach((link) => links[link].show());
   }
 
-  const results = Object.keys(links).filter((key) => key.includes(query));
-
-  const hiddenLinks = Object.keys(links).filter(
-    (key) => !results.includes(key)
+  // Use the filter method to create an array of non-matching Link objects
+  const hiddenLinks = Object.values(links).filter(
+    (link) => !matches.includes(link)
   );
-  hiddenLinks.forEach((link) => links[link].hide());
-  results.forEach((result) => links[result].show());
+
+  // Use the forEach method to apply the hide method to the non-matching Link objects
+  hiddenLinks.forEach((link) => link.hide());
 };
 
 const debounce = (cb, delay = 250) => {
