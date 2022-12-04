@@ -66,6 +66,14 @@ class Link {
     this.visible = true;
   }
 
+  highlight(query) {
+    // Use the replace method to add <span> tags around the search query
+    const highlighted = this.text.replace(query, "<span>" + query + "</span>");
+
+    // Set the innerHTML of the element to the highlighted text
+    this.element.innerHTML = highlighted;
+  }
+
   toggle() {
     this.visible = !this.visible;
     this.visible
@@ -93,6 +101,8 @@ entries.forEach((entry) => {
 
 const superindexSearch = (e) => {
   const query = searchBar.value;
+
+  Object.keys(links).forEach((link) => links[link].highlight(query));
 
   if (query === "") {
     Object.keys(links).forEach((link) => links[link].show());

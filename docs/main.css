@@ -1,94 +1,105 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
 }
 
 body.contentspage h1 {
-    all: unset;
-    text-align: center;
-    font-weight: bolder;
-    font-size: xx-large;
-    width: 100%;
+  all: unset;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  width: 100%;
 }
 
-dt, dd {
-    margin: 0;
-    padding: 0;
+dt,
+dd {
+  margin: 0;
+  padding: 0;
 }
 
 body.contentspage {
-    margin: 2%;
+  margin: 2%;
 }
 
 .superindex {
-    margin-left: 5%;
+  margin-left: 5%;
 }
 
 dt > a {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 dd {
-    display: grid;
-    grid-template-columns: repeat(4, max-content);
-    gap: 1rem;
-    padding: 0 0 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 1rem;
+  padding: 0 0 2rem 0;
 }
 
-dd:has(+ a) {
-    border: 1px solid #333;
+dd > a {
+  font-size: smaller;
 }
 
 .meta-koha-search {
-    all: unset;
-    width: 100%;
-    margin: 1rem 0;
-    padding: 6px;
-    font-size: xx-large;
-    line-height: 1rem;
-    border-color: transparent;
-    border-bottom: 2px solid #333;
-    border-radius: 4px;
-    background-color: whitesmoke;
+  all: unset;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 6px;
+  font-size: xx-large;
+  line-height: 1rem;
+  border-color: transparent;
+  border-bottom: 2px solid #333;
+  border-radius: 4px;
+  background-color: whitesmoke;
 }
 
 .d-none {
-    display: none !important;
+  display: none !important;
 }
 
 .meta-koha-nav {
-    display: flex;
-    overflow-x: scroll;
+  display: flex;
+  overflow-x: scroll;
 }
 
 .meta-koha-nav-entry {
-    padding: 3px;
-    margin: 2px;
-    margin-bottom: 1em;
-    border: 1px inset black;
-    border-radius: 6px;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+  padding: 3px;
+  margin: 2px;
+  margin-bottom: 1em;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.meta-koha-nav-entry:hover, 
+.meta-koha-nav-entry:hover,
 .meta-koha-nav-back-to-top:hover {
-    border: 1px outset #cc0000;
-    background: #cc0000;
-    color: white;
+  border: 1px outset #cc0000;
+  background: #cc0000;
+  color: white;
 }
 
 .meta-koha-nav-back-to-top {
-    font-weight: bolder;
-    background: white;
-    border: 1px inset #333;
-    border-radius: 6px;
-    padding: 5px;
-    margin: 2px;
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+  font-weight: bolder;
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 5px;
+  margin: 2px;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Style the <span> elements that wrap the search query */
+span {
+  /* Set the font weight to bold */
+  font-weight: bold;
+
+  /* Set the color to a color that stands out from the rest of the text */
+  color: crimson;
 }
