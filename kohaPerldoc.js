@@ -2,8 +2,8 @@ const currentBranch = "master";
 
 /** Insert a heading for our browser */
 const heading = document.querySelector("body > h1");
-heading.textContent = currentBranch;
-heading.classList.add("meta-koha-heading");
+heading.innerHTML = `${currentBranch}`;
+heading.className = "meta-koha-heading";
 
 /** Build a search bar as an entry point for
  *  full text search */
@@ -17,9 +17,9 @@ heading.insertAdjacentElement("afterend", searchBar);
 
 const subHeadings = document.querySelectorAll("dt > a");
 const subHeadingMap = {};
-subHeadings.forEach((subHeading) => {
-  subHeadingMap[subHeading.name] = subHeading;
-});
+for (let i = 0; i < subHeadings.length; i++) {
+  subHeadingMap[subHeadings[i].name] = subHeadings[i];
+}
 
 const scrollIntoNavEntry = (e) => {
   subHeadingMap[e.target.textContent].scrollIntoView();
