@@ -1,0 +1,40 @@
+
+
+
+/* Use a dark background color */
+body {
+    background-color: #1c1c1c;
+    color: #cccccc;
+  }
+  
+  /* Use a light color for the headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #ffffff;
+  }
+  
+  /* Use a light color for the links */
+  a {
+    color: #ffffff;
+  }
+  
+  /* Use a light color for the code blocks */
+  pre {
+    background-color: #2b2b2b;
+    color: #cccccc;
+  }
+  
+  /* Use a dark color for the table background */
+  table {
+    background-color: #2b2b2b;
+  }
+  
+  /* Use a light color for the table cells */
+  td,
+  th {
+    color: #cccccc;
+  }
