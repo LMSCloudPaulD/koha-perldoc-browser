@@ -9,7 +9,6 @@ body.contentspage h1 {
     font-weight: bolder;
     font-size: xx-large;
     width: 100%;
-
 }
 
 dt, dd {
@@ -22,18 +21,10 @@ body.contentspage {
 }
 
 .superindex {
-    /*
-    margin-left: 10%;
-    c: good margin if dt > a props are set */
     margin-left: 5%;
 }
 
 dt > a {
-    /*
-    position: absolute;
-    left: calc(2% + 1rem);
-    font-weight: bolder;
-    c: shows subHeadings */
     visibility: hidden;
 }
 
@@ -56,10 +47,9 @@ dd > a {
     font-size: xx-large;
     line-height: 1rem;
     border-color: transparent;
-    border-bottom: 2px solid darkslategray;
+    border-bottom: 2px solid #333;
     border-radius: 4px;
     background-color: whitesmoke;
-
 }
 
 .d-none {
@@ -79,19 +69,20 @@ dd > a {
     border-radius: 6px;
     white-space: nowrap;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .meta-koha-nav-entry:hover, 
 .meta-koha-nav-back-to-top:hover {
-    border: 1px outset crimson;
-    background: crimson;
+    border: 1px outset #cc0000;
+    background: #cc0000;
     color: white;
 }
 
 .meta-koha-nav-back-to-top {
     font-weight: bolder;
     background: white;
-    border: 1px inset darkslategray;
+    border: 1px inset #333;
     border-radius: 6px;
     padding: 5px;
     margin: 2px;
@@ -99,4 +90,5 @@ dd > a {
     bottom: 1em;
     right: 1em;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
