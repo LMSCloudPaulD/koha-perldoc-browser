@@ -12,9 +12,17 @@ DATE=$(date)
 
 echo "Globals set.."
 
-# Change into the Koha directory
-echo "Changing into Koha/ .."
-cd Koha || exit 1
+# Check if the Koha directory exists
+if [ ! -d "Koha" ]; then
+  # Clone the Koha repository from GitHub
+  git clone "$REPOSITORY"
+
+  # Change into the Koha directory
+  cd Koha || exit 1
+else
+  # Change into the Koha directory
+  cd Koha || exit 1
+fi
 
 echo "Pulling Koha repository"
 
