@@ -35,9 +35,9 @@ dd {
     padding: 0 0 2rem 0;
 }
 
-dd > a {
-
-}
+dd:has(+ a) {
+    border: 1px solid #333;
+} 
 
 .meta-koha-search {
     all: unset;
