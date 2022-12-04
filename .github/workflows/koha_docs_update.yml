@@ -1,0 +1,13 @@
+name: Daily Koha Docs Update
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  update_docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-perl@v1
+    - run: bash build.sh
