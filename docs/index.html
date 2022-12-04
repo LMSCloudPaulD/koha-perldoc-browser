@@ -17,7 +17,7 @@
 
 <script type="text/javascript" src="_podly.js"></script>
 
-<link rel="stylesheet" href="main.css"><script defer src="kohaPerldoc.js"></script></head>
+</head>
 
 <body class='contentspage'>
 <h1>Perl Documentation</h1>
@@ -38,6 +38,7 @@
   <a href="./acqui/invoice-files.html">acqui::invoice-files</a>&nbsp;&nbsp;
   <a href="./acqui/invoices.html">acqui::invoices</a>&nbsp;&nbsp;
   <a href="./acqui/lateorders.html">acqui::lateorders</a>&nbsp;&nbsp;
+  <a href="./acqui/moddeliverydate.html">acqui::moddeliverydate</a>&nbsp;&nbsp;
   <a href="./acqui/modordernotes.html">acqui::modordernotes</a>&nbsp;&nbsp;
   <a href="./acqui/neworderempty.html">acqui::neworderempty</a>&nbsp;&nbsp;
   <a href="./acqui/newordersuggestion.html">acqui::newordersuggestion</a>&nbsp;&nbsp;
@@ -295,6 +296,15 @@
   <a href="./Koha/ArticleRequests.html">Koha::ArticleRequests</a>&nbsp;&nbsp;
   <a href="./Koha/AudioAlert.html">Koha::AudioAlert</a>&nbsp;&nbsp;
   <a href="./Koha/AudioAlerts.html">Koha::AudioAlerts</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/Client.html">Koha::Auth::Client</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/Client/OAuth.html">Koha::Auth::Client::OAuth</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/Identity/Provider.html">Koha::Auth::Identity::Provider</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/Identity/Provider/Domain.html">Koha::Auth::Identity::Provider::Domain</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/Identity/Provider/Domains.html">Koha::Auth::Identity::Provider::Domains</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/Identity/Provider/OAuth.html">Koha::Auth::Identity::Provider::OAuth</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/Identity/Provider/OIDC.html">Koha::Auth::Identity::Provider::OIDC</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/Identity/Providers.html">Koha::Auth::Identity::Providers</a>&nbsp;&nbsp;
+  <a href="./Koha/Auth/Permissions.html">Koha::Auth::Permissions</a>&nbsp;&nbsp;
   <a href="./Koha/Auth/TwoFactorAuth.html">Koha::Auth::TwoFactorAuth</a>&nbsp;&nbsp;
   <a href="./Koha/AuthorisedValue.html">Koha::AuthorisedValue</a>&nbsp;&nbsp;
   <a href="./Koha/AuthorisedValueCategories.html">Koha::AuthorisedValueCategories</a>&nbsp;&nbsp;
@@ -320,6 +330,10 @@
   <a href="./Koha/BackgroundJob/BatchUpdateBiblio.html">Koha::BackgroundJob::BatchUpdateBiblio</a>&nbsp;&nbsp;
   <a href="./Koha/BackgroundJob/BatchUpdateBiblioHoldsQueue.html">Koha::BackgroundJob::BatchUpdateBiblioHoldsQueue</a>&nbsp;&nbsp;
   <a href="./Koha/BackgroundJob/BatchUpdateItem.html">Koha::BackgroundJob::BatchUpdateItem</a>&nbsp;&nbsp;
+  <a href="./Koha/BackgroundJob/CreateEHoldingsFromBiblios.html">Koha::BackgroundJob::CreateEHoldingsFromBiblios</a>&nbsp;&nbsp;
+  <a href="./Koha/BackgroundJob/MARCImportCommitBatch.html">Koha::BackgroundJob::MARCImportCommitBatch</a>&nbsp;&nbsp;
+  <a href="./Koha/BackgroundJob/MARCImportRevertBatch.html">Koha::BackgroundJob::MARCImportRevertBatch</a>&nbsp;&nbsp;
+  <a href="./Koha/BackgroundJob/StageMARCForImport.html">Koha::BackgroundJob::StageMARCForImport</a>&nbsp;&nbsp;
   <a href="./Koha/BackgroundJob/UpdateElasticIndex.html">Koha::BackgroundJob::UpdateElasticIndex</a>&nbsp;&nbsp;
   <a href="./Koha/BackgroundJobs.html">Koha::BackgroundJobs</a>&nbsp;&nbsp;
   <a href="./Koha/Biblio.html">Koha::Biblio</a>&nbsp;&nbsp;
@@ -421,6 +435,28 @@
   <a href="./Koha/Edifact/Transport.html">Koha::Edifact::Transport</a>&nbsp;&nbsp;
   <a href="./Koha/Email.html">Koha::Email</a>&nbsp;&nbsp;
   <a href="./Koha/Encryption.html">Koha::Encryption</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Agreement.html">Koha::ERM::Agreement</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Agreement/License.html">Koha::ERM::Agreement::License</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Agreement/Licenses.html">Koha::ERM::Agreement::Licenses</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Agreement/Period.html">Koha::ERM::Agreement::Period</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Agreement/Periods.html">Koha::ERM::Agreement::Periods</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Agreement/Relationship.html">Koha::ERM::Agreement::Relationship</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Agreement/Relationships.html">Koha::ERM::Agreement::Relationships</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Agreements.html">Koha::ERM::Agreements</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Document.html">Koha::ERM::Document</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Documents.html">Koha::ERM::Documents</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/EHoldings/Package.html">Koha::ERM::EHoldings::Package</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/EHoldings/Package/Agreement.html">Koha::ERM::EHoldings::Package::Agreement</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/EHoldings/Package/Agreements.html">Koha::ERM::EHoldings::Package::Agreements</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/EHoldings/Packages.html">Koha::ERM::EHoldings::Packages</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/EHoldings/Resource.html">Koha::ERM::EHoldings::Resource</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/EHoldings/Resources.html">Koha::ERM::EHoldings::Resources</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/EHoldings/Title.html">Koha::ERM::EHoldings::Title</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/EHoldings/Titles.html">Koha::ERM::EHoldings::Titles</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/License.html">Koha::ERM::License</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/Licenses.html">Koha::ERM::Licenses</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/UserRole.html">Koha::ERM::UserRole</a>&nbsp;&nbsp;
+  <a href="./Koha/ERM/UserRoles.html">Koha::ERM::UserRoles</a>&nbsp;&nbsp;
   <a href="./Koha/Exception.html">Koha::Exception</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Account.html">Koha::Exceptions::Account</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Acquisition/Basket.html">Koha::Exceptions::Acquisition::Basket</a>&nbsp;&nbsp;
@@ -430,6 +466,7 @@
   <a href="./Koha/Exceptions/Elasticsearch.html">Koha::Exceptions::Elasticsearch</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Hold.html">Koha::Exceptions::Hold</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Ill.html">Koha::Exceptions::Ill</a>&nbsp;&nbsp;
+  <a href="./Koha/Exceptions/Item/Bundle.html">Koha::Exceptions::Item::Bundle</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Item/Transfer.html">Koha::Exceptions::Item::Transfer</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/MarcOverlayRule.html">Koha::Exceptions::MarcOverlayRule</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Metadata.html">Koha::Exceptions::Metadata</a>&nbsp;&nbsp;
@@ -443,6 +480,7 @@
   <a href="./Koha/Exceptions/Token.html">Koha::Exceptions::Token</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/TransferLimit.html">Koha::Exceptions::TransferLimit</a>&nbsp;&nbsp;
   <a href="./Koha/Exceptions/Virtualshelf.html">Koha::Exceptions::Virtualshelf</a>&nbsp;&nbsp;
+  <a href="./Koha/Exceptions/XSLT.html">Koha::Exceptions::XSLT</a>&nbsp;&nbsp;
   <a href="./Koha/Exporter/Record.html">Koha::Exporter::Record</a>&nbsp;&nbsp;
   <a href="./Koha/ExternalContent.html">Koha::ExternalContent</a>&nbsp;&nbsp;
   <a href="./Koha/ExternalContent/OverDrive.html">Koha::ExternalContent::OverDrive</a>&nbsp;&nbsp;
@@ -451,7 +489,6 @@
   <a href="./Koha/Filter/MARC/EmbedItemsAvailability.html">Koha::Filter::MARC::EmbedItemsAvailability</a>&nbsp;&nbsp;
   <a href="./Koha/Filter/MARC/EmbedSeeFromHeadings.html">Koha::Filter::MARC::EmbedSeeFromHeadings</a>&nbsp;&nbsp;
   <a href="./Koha/Filter/MARC/ExpandCodedFields.html">Koha::Filter::MARC::ExpandCodedFields</a>&nbsp;&nbsp;
-  <a href="./Koha/Filter/MARC/Index880InZebra.html">Koha::Filter::MARC::Index880InZebra</a>&nbsp;&nbsp;
   <a href="./Koha/Filter/MARC/Null.html">Koha::Filter::MARC::Null</a>&nbsp;&nbsp;
   <a href="./Koha/Filter/MARC/ViewPolicy.html">Koha::Filter::MARC::ViewPolicy</a>&nbsp;&nbsp;
   <a href="./Koha/FrameworkPlugin.html">Koha::FrameworkPlugin</a>&nbsp;&nbsp;
@@ -465,10 +502,14 @@
   <a href="./Koha/Illrequest/Availability.html">Koha::Illrequest::Availability</a>&nbsp;&nbsp;
   <a href="./Koha/Illrequest/Config.html">Koha::Illrequest::Config</a>&nbsp;&nbsp;
   <a href="./Koha/Illrequest/Logger.html">Koha::Illrequest::Logger</a>&nbsp;&nbsp;
+  <a href="./Koha/Illrequest/SupplierUpdate.html">Koha::Illrequest::SupplierUpdate</a>&nbsp;&nbsp;
+  <a href="./Koha/Illrequest/SupplierUpdateProcessor.html">Koha::Illrequest::SupplierUpdateProcessor</a>&nbsp;&nbsp;
   <a href="./Koha/Illrequestattribute.html">Koha::Illrequestattribute</a>&nbsp;&nbsp;
   <a href="./Koha/Illrequestattributes.html">Koha::Illrequestattributes</a>&nbsp;&nbsp;
   <a href="./Koha/Illrequests.html">Koha::Illrequests</a>&nbsp;&nbsp;
   <a href="./Koha/Import/Record.html">Koha::Import::Record</a>&nbsp;&nbsp;
+  <a href="./Koha/Import/Record/Biblio.html">Koha::Import::Record::Biblio</a>&nbsp;&nbsp;
+  <a href="./Koha/Import/Record/Biblios.html">Koha::Import::Record::Biblios</a>&nbsp;&nbsp;
   <a href="./Koha/Import/Record/Item.html">Koha::Import::Record::Item</a>&nbsp;&nbsp;
   <a href="./Koha/Import/Record/Items.html">Koha::Import::Record::Items</a>&nbsp;&nbsp;
   <a href="./Koha/Import/Record/Match.html">Koha::Import::Record::Match</a>&nbsp;&nbsp;
@@ -481,6 +522,8 @@
   <a href="./Koha/Indexer/Utils.html">Koha::Indexer::Utils</a>&nbsp;&nbsp;
   <a href="./Koha/Item.html">Koha::Item</a>&nbsp;&nbsp;
   <a href="./Koha/Item/Attributes.html">Koha::Item::Attributes</a>&nbsp;&nbsp;
+  <a href="./Koha/Item/Template.html">Koha::Item::Template</a>&nbsp;&nbsp;
+  <a href="./Koha/Item/Templates.html">Koha::Item::Templates</a>&nbsp;&nbsp;
   <a href="./Koha/Item/Transfer.html">Koha::Item::Transfer</a>&nbsp;&nbsp;
   <a href="./Koha/Item/Transfer/Limit.html">Koha::Item::Transfer::Limit</a>&nbsp;&nbsp;
   <a href="./Koha/Item/Transfer/Limits.html">Koha::Item::Transfer::Limits</a>&nbsp;&nbsp;
@@ -565,6 +608,8 @@
   <a href="./Koha/Patron/Password/Recovery.html">Koha::Patron::Password::Recovery</a>&nbsp;&nbsp;
   <a href="./Koha/Patron/Relationship.html">Koha::Patron::Relationship</a>&nbsp;&nbsp;
   <a href="./Koha/Patron/Relationships.html">Koha::Patron::Relationships</a>&nbsp;&nbsp;
+  <a href="./Koha/Patron/Restriction/Type.html">Koha::Patron::Restriction::Type</a>&nbsp;&nbsp;
+  <a href="./Koha/Patron/Restriction/Types.html">Koha::Patron::Restriction::Types</a>&nbsp;&nbsp;
   <a href="./Koha/Patrons.html">Koha::Patrons</a>&nbsp;&nbsp;
   <a href="./Koha/Patrons/Import.html">Koha::Patrons::Import</a>&nbsp;&nbsp;
   <a href="./Koha/Plugins.html">Koha::Plugins</a>&nbsp;&nbsp;
@@ -587,6 +632,7 @@
   <a href="./Koha/RecordProcessor/Base.html">Koha::RecordProcessor::Base</a>&nbsp;&nbsp;
   <a href="./Koha/Report.html">Koha::Report</a>&nbsp;&nbsp;
   <a href="./Koha/Reports.html">Koha::Reports</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/Plugin/Auth/IdP.html">Koha::REST::Plugin::Auth::IdP</a>&nbsp;&nbsp;
   <a href="./Koha/REST/Plugin/Exceptions.html">Koha::REST::Plugin::Exceptions</a>&nbsp;&nbsp;
   <a href="./Koha/REST/Plugin/Objects.html">Koha::REST::Plugin::Objects</a>&nbsp;&nbsp;
   <a href="./Koha/REST/Plugin/Pagination.html">Koha::REST::Plugin::Pagination</a>&nbsp;&nbsp;
@@ -600,6 +646,9 @@
   <a href="./Koha/REST/V1/AdvancedEditorMacro.html">Koha::REST::V1::AdvancedEditorMacro</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/ArticleRequests.html">Koha::REST::V1::ArticleRequests</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Auth.html">Koha::REST::V1::Auth</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/Auth/Identity/Provider/Domains.html">Koha::REST::V1::Auth::Identity::Provider::Domains</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/Auth/Identity/Providers.html">Koha::REST::V1::Auth::Identity::Providers</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/BackgroundJobs.html">Koha::REST::V1::BackgroundJobs</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Biblios.html">Koha::REST::V1::Biblios</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Biblios/ItemGroups.html">Koha::REST::V1::Biblios::ItemGroups</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Biblios/ItemGroups/Items.html">Koha::REST::V1::Biblios::ItemGroups::Items</a>&nbsp;&nbsp;
@@ -609,6 +658,18 @@
   <a href="./Koha/REST/V1/Cities.html">Koha::REST::V1::Cities</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Clubs/Holds.html">Koha::REST::V1::Clubs::Holds</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Config/SMTP/Servers.html">Koha::REST::V1::Config::SMTP::Servers</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM.html">Koha::REST::V1::ERM</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/Agreements.html">Koha::REST::V1::ERM::Agreements</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/Documents.html">Koha::REST::V1::ERM::Documents</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/EHoldings/Packages.html">Koha::REST::V1::ERM::EHoldings::Packages</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/EHoldings/Packages/Local.html">Koha::REST::V1::ERM::EHoldings::Packages::Local</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/EHoldings/Resources.html">Koha::REST::V1::ERM::EHoldings::Resources</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/EHoldings/Resources/EBSCO.html">Koha::REST::V1::ERM::EHoldings::Resources::EBSCO</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/EHoldings/Resources/Local.html">Koha::REST::V1::ERM::EHoldings::Resources::Local</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/EHoldings/Titles.html">Koha::REST::V1::ERM::EHoldings::Titles</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/EHoldings/Titles/EBSCO.html">Koha::REST::V1::ERM::EHoldings::Titles::EBSCO</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/EHoldings/Titles/Local.html">Koha::REST::V1::ERM::EHoldings::Titles::Local</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/ERM/Licenses.html">Koha::REST::V1::ERM::Licenses</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Holds.html">Koha::REST::V1::Holds</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Illbackends.html">Koha::REST::V1::Illbackends</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Illrequests.html">Koha::REST::V1::Illrequests</a>&nbsp;&nbsp;
@@ -617,6 +678,7 @@
   <a href="./Koha/REST/V1/Items.html">Koha::REST::V1::Items</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Libraries.html">Koha::REST::V1::Libraries</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/OAuth.html">Koha::REST::V1::OAuth</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/OAuth/Client.html">Koha::REST::V1::OAuth::Client</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Patrons.html">Koha::REST::V1::Patrons</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Patrons/Account.html">Koha::REST::V1::Patrons::Account</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Patrons/Attributes.html">Koha::REST::V1::Patrons::Attributes</a>&nbsp;&nbsp;
@@ -625,10 +687,12 @@
   <a href="./Koha/REST/V1/Patrons/Password/Expiration.html">Koha::REST::V1::Patrons::Password::Expiration</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Quotes.html">Koha::REST::V1::Quotes</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/ReturnClaims.html">Koha::REST::V1::ReturnClaims</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/SearchFilter.html">Koha::REST::V1::SearchFilter</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Stage.html">Koha::REST::V1::Stage</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Static.html">Koha::REST::V1::Static</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/Suggestions.html">Koha::REST::V1::Suggestions</a>&nbsp;&nbsp;
   <a href="./Koha/REST/V1/TransferLimits.html">Koha::REST::V1::TransferLimits</a>&nbsp;&nbsp;
+  <a href="./Koha/REST/V1/TwoFactorAuth.html">Koha::REST::V1::TwoFactorAuth</a>&nbsp;&nbsp;
   <a href="./Koha/Result/Boolean.html">Koha::Result::Boolean</a>&nbsp;&nbsp;
   <a href="./Koha/Review.html">Koha::Review</a>&nbsp;&nbsp;
   <a href="./Koha/Reviews.html">Koha::Reviews</a>&nbsp;&nbsp;
@@ -737,12 +801,25 @@
   <a href="./Koha/Schema/Result/Discharge.html">Koha::Schema::Result::Discharge</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/EdifactEan.html">Koha::Schema::Result::EdifactEan</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/EdifactMessage.html">Koha::Schema::Result::EdifactMessage</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmAgreement.html">Koha::Schema::Result::ErmAgreement</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmAgreementLicense.html">Koha::Schema::Result::ErmAgreementLicense</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmAgreementPeriod.html">Koha::Schema::Result::ErmAgreementPeriod</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmAgreementRelationship.html">Koha::Schema::Result::ErmAgreementRelationship</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmDocument.html">Koha::Schema::Result::ErmDocument</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmEholdingsPackage.html">Koha::Schema::Result::ErmEholdingsPackage</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmEholdingsPackagesAgreement.html">Koha::Schema::Result::ErmEholdingsPackagesAgreement</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmEholdingsResource.html">Koha::Schema::Result::ErmEholdingsResource</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmEholdingsTitle.html">Koha::Schema::Result::ErmEholdingsTitle</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmLicense.html">Koha::Schema::Result::ErmLicense</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ErmUserRole.html">Koha::Schema::Result::ErmUserRole</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ExportFormat.html">Koha::Schema::Result::ExportFormat</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/HoldCancellationRequest.html">Koha::Schema::Result::HoldCancellationRequest</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/HoldFillTarget.html">Koha::Schema::Result::HoldFillTarget</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/HouseboundProfile.html">Koha::Schema::Result::HouseboundProfile</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/HouseboundRole.html">Koha::Schema::Result::HouseboundRole</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/HouseboundVisit.html">Koha::Schema::Result::HouseboundVisit</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/IdentityProvider.html">Koha::Schema::Result::IdentityProvider</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/IdentityProviderDomain.html">Koha::Schema::Result::IdentityProviderDomain</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Illcomment.html">Koha::Schema::Result::Illcomment</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Illrequest.html">Koha::Schema::Result::Illrequest</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Illrequestattribute.html">Koha::Schema::Result::Illrequestattribute</a>&nbsp;&nbsp;
@@ -757,6 +834,7 @@
   <a href="./Koha/Schema/Result/Item.html">Koha::Schema::Result::Item</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ItemBundle.html">Koha::Schema::Result::ItemBundle</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ItemCirculationAlertPreference.html">Koha::Schema::Result::ItemCirculationAlertPreference</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/ItemEditorTemplate.html">Koha::Schema::Result::ItemEditorTemplate</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ItemGroup.html">Koha::Schema::Result::ItemGroup</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ItemGroupItem.html">Koha::Schema::Result::ItemGroupItem</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ItemsLastBorrower.html">Koha::Schema::Result::ItemsLastBorrower</a>&nbsp;&nbsp;
@@ -819,11 +897,13 @@
   <a href="./Koha/Schema/Result/RepeatableHoliday.html">Koha::Schema::Result::RepeatableHoliday</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ReportsDictionary.html">Koha::Schema::Result::ReportsDictionary</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Reserve.html">Koha::Schema::Result::Reserve</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/RestrictionType.html">Koha::Schema::Result::RestrictionType</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/ReturnClaim.html">Koha::Schema::Result::ReturnClaim</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/Review.html">Koha::Schema::Result::Review</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/SavedReport.html">Koha::Schema::Result::SavedReport</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/SavedSql.html">Koha::Schema::Result::SavedSql</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/SearchField.html">Koha::Schema::Result::SearchField</a>&nbsp;&nbsp;
+  <a href="./Koha/Schema/Result/SearchFilter.html">Koha::Schema::Result::SearchFilter</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/SearchHistory.html">Koha::Schema::Result::SearchHistory</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/SearchMarcMap.html">Koha::Schema::Result::SearchMarcMap</a>&nbsp;&nbsp;
   <a href="./Koha/Schema/Result/SearchMarcToField.html">Koha::Schema::Result::SearchMarcToField</a>&nbsp;&nbsp;
@@ -876,6 +956,8 @@
   <a href="./Koha/SearchEngine/Zebra/Search.html">Koha::SearchEngine::Zebra::Search</a>&nbsp;&nbsp;
   <a href="./Koha/SearchField.html">Koha::SearchField</a>&nbsp;&nbsp;
   <a href="./Koha/SearchFields.html">Koha::SearchFields</a>&nbsp;&nbsp;
+  <a href="./Koha/SearchFilter.html">Koha::SearchFilter</a>&nbsp;&nbsp;
+  <a href="./Koha/SearchFilters.html">Koha::SearchFilters</a>&nbsp;&nbsp;
   <a href="./Koha/SearchMarcMap.html">Koha::SearchMarcMap</a>&nbsp;&nbsp;
   <a href="./Koha/SearchMarcMaps.html">Koha::SearchMarcMaps</a>&nbsp;&nbsp;
   <a href="./Koha/Serial.html">Koha::Serial</a>&nbsp;&nbsp;
@@ -922,9 +1004,11 @@
   <a href="./Koha/Tags/Indexes.html">Koha::Tags::Indexes</a>&nbsp;&nbsp;
   <a href="./Koha/Template/Plugin/AdditionalContents.html">Koha::Template::Plugin::AdditionalContents</a>&nbsp;&nbsp;
   <a href="./Koha/Template/Plugin/Asset.html">Koha::Template::Plugin::Asset</a>&nbsp;&nbsp;
+  <a href="./Koha/Template/Plugin/AuthClient.html">Koha::Template::Plugin::AuthClient</a>&nbsp;&nbsp;
   <a href="./Koha/Template/Plugin/AuthorisedValues.html">Koha::Template::Plugin::AuthorisedValues</a>&nbsp;&nbsp;
   <a href="./Koha/Template/Plugin/Cache.html">Koha::Template::Plugin::Cache</a>&nbsp;&nbsp;
   <a href="./Koha/Template/Plugin/Categories.html">Koha::Template::Plugin::Categories</a>&nbsp;&nbsp;
+  <a href="./Koha/Template/Plugin/CirculationRules.html">Koha::Template::Plugin::CirculationRules</a>&nbsp;&nbsp;
   <a href="./Koha/Template/Plugin/Context.html">Koha::Template::Plugin::Context</a>&nbsp;&nbsp;
   <a href="./Koha/Template/Plugin/Desks.html">Koha::Template::Plugin::Desks</a>&nbsp;&nbsp;
   <a href="./Koha/Template/Plugin/HtmlId.html">Koha::Template::Plugin::HtmlId</a>&nbsp;&nbsp;
@@ -956,6 +1040,7 @@
   <a href="./Koha/Virtualshelfshares.html">Koha::Virtualshelfshares</a>&nbsp;&nbsp;
   <a href="./Koha/Virtualshelves.html">Koha::Virtualshelves</a>&nbsp;&nbsp;
   <a href="./Koha/XSLT/Base.html">Koha::XSLT::Base</a>&nbsp;&nbsp;
+  <a href="./Koha/XSLT/HTTPS.html">Koha::XSLT::HTTPS</a>&nbsp;&nbsp;
   <a href="./Koha/XSLT/Security.html">Koha::XSLT::Security</a>&nbsp;&nbsp;
   <a href="./Koha/Z3950Responder.html">Koha::Z3950Responder</a>&nbsp;&nbsp;
   <a href="./Koha/Z3950Responder/GenericSession.html">Koha::Z3950Responder::GenericSession</a>&nbsp;&nbsp;
@@ -1015,6 +1100,7 @@
   <a href="./misc/cronjobs/delete_items.html">misc::cronjobs::delete_items</a>&nbsp;&nbsp;
   <a href="./misc/cronjobs/delete_patrons.html">misc::cronjobs::delete_patrons</a>&nbsp;&nbsp;
   <a href="./misc/cronjobs/gather_print_notices.html">misc::cronjobs::gather_print_notices</a>&nbsp;&nbsp;
+  <a href="./misc/cronjobs/holds/build_holds_queue.html">misc::cronjobs::holds::build_holds_queue</a>&nbsp;&nbsp;
   <a href="./misc/cronjobs/holds/cancel_expired_holds.html">misc::cronjobs::holds::cancel_expired_holds</a>&nbsp;&nbsp;
   <a href="./misc/cronjobs/holds/cancel_unfilled_holds.html">misc::cronjobs::holds::cancel_unfilled_holds</a>&nbsp;&nbsp;
   <a href="./misc/cronjobs/holds/holds_reminder.html">misc::cronjobs::holds::holds_reminder</a>&nbsp;&nbsp;
@@ -1089,7 +1175,6 @@
   <a href="./opac/opac-ISBDdetail.html">opac::opac-ISBDdetail</a>&nbsp;&nbsp;
   <a href="./opac/opac-MARCdetail.html">opac::opac-MARCdetail</a>&nbsp;&nbsp;
   <a href="./opac/opac-ratings.html">opac::opac-ratings</a>&nbsp;&nbsp;
-  <a href="./opac/opac-ratings-ajax.html">opac::opac-ratings-ajax</a>&nbsp;&nbsp;
   <a href="./opac/opac-tags.html">opac::opac-tags</a>&nbsp;&nbsp;
   <a href="./opac/opac-tags_subject.html">opac::opac-tags_subject</a>&nbsp;&nbsp;
   <a href="./opac/opac-topissues.html">opac::opac-topissues</a>&nbsp;&nbsp;
@@ -1198,7 +1283,7 @@
 </dl>
 
 
-<p class='contentsfooty'>Generated by Pod::Simple::HTMLBatch v3.42 under Perl v5.034000
-<br >At Wed Aug  3 20:44:00 2022 GMT.</p>
+<p class='contentsfooty'>Generated by Pod::Simple::HTMLBatch v3.40 under Perl v5.032000
+<br >At Sun Dec  4 18:11:09 2022 GMT, which is Sun Dec  4 19:11:09 2022 local time.</p>
 
 </body></html>
