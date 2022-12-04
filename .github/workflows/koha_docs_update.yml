@@ -4,8 +4,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  update_docs:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - run: bash build.sh
+      - uses: actions/checkout@v3
+      - name: Cache the Koha repository
+        uses: actions/cache@v2
+        with:
+          path: Koha
+          key: Koha-repository
+      - name: Set git config options
+        run: |
+          git config --global user.email "paul.derscheid@lmscloud.de"
+          git config --global user.name "LMSCloudPaulD"
+      - name: Run build script
+        run: ./build.sh
