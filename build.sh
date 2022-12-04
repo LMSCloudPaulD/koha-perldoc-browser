@@ -28,7 +28,7 @@ cd "$SCRIPT_PATH" || exit 1
 
 # Generate the documentation
 echo "Generating documentation"
-perl -MPod::Simple::HTMLBatch -e Pod::Simple::HTMLBatch::go Koha docs || exit 1
+perl -MPod::Simple::HTMLBatch -e 'Pod::Simple::HTMLBatch::go(css_flurry => 0, javascript_flurry => 0, @ARGV);' Koha docs || exit 1
 
 # Copy the main.css and kohaPerldoc.js files to the docs directory
 cp main.css docs/ || exit 1
