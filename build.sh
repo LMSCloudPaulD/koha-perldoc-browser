@@ -49,16 +49,16 @@ iterate_files() {
     find "$SCRIPT_PATH/docs" -type f | while read -r file; do
         # If the file is an HTML file
         if [[ $file == *.html ]]; then
-            # Use the dirname command to extract the directory name from the file path
+            # Use the dirname command to remove the last two directories from the file path
             # Use the realpath command to convert the relative path to a canonical path
-            css_path=$(realpath --canonicalize-missing --relative-to="$(dirname "$file")" "$SCRIPT_PATH/sub.css")
+            css_path=$(realpath --canonicalize-missing --relative-to="$(dirname "$(dirname "$file")")" "$SCRIPT_PATH/sub.css")
 
             # Use the awk command to add the canonical path to the href attribute of the link tag
             # Use the '{ print }' action to print each line of the file
             # Use the '\n' string to add a newline character
             # Use the 'ORS' variable to specify the output record separator
             # Use the 'FILENAME' variable to specify the name of the temporary file
-            awk '{ print } /<head>/ { print "\n<link rel=\"stylesheet\" href=\"'"$css_path"'\">" }' ORS="\n" "$file" > "$file.tmp"
+            awk '{ print } /<head>/ { print "\n<link rel=\"stylesheet\" href=\"'$css_path'\">" }' ORS="\n" "$file" > "$file.tmp"
 
             # Use the mv command to replace the original file with the temporary file
             mv "$file.tmp" "$file"
