@@ -35,7 +35,7 @@ cp main.css docs/ || exit 1
 cp kohaPerldoc.js docs/ || exit 1
 
 # Check if the host OS is M1 macOS
-if [ "$(uname -p)" = "arm64" ]; then
+if [ "$(uname -p)" = "arm" ]; then
     # Check if gsed is installed
     if ! command -v gsed > /dev/null; then
         # Show the user how to install gsed
