@@ -46,7 +46,7 @@ cp kohaPerldoc.js docs/ || exit 1
 # Define a bash function to handle the iteration over the files in the docs directory and its subdirectories
 iterate_files() {
     # Iterate over all files and directories in the docs directory recursively
-    find "$SCRIPT_PATH/docs/*" -type f | while read -r file; do
+    find "$SCRIPT_PATH/docs/**" -type f | while read -r file; do
         # If the file is an HTML file
         if [[ $file == *.html ]]; then
             # Use the dirname command to remove the last two directories from the file path
