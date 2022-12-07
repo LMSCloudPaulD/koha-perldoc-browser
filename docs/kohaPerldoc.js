@@ -68,7 +68,10 @@ class Link {
 
   highlight(query) {
     // Use the replace method to add <span> tags around the search query
-    const highlighted = this.text.replace(query, "<span>" + query + "</span>");
+    const highlighted = this.text.replace(
+      new RegExp(query, "ig"),
+      `<span>$&</span>`
+    );
 
     // Set the innerHTML of the element to the highlighted text
     this.element.innerHTML = highlighted;
@@ -101,10 +104,11 @@ entries.forEach((entry) => {
 
 const superindexSearch = (e) => {
   const query = searchBar.value;
+  const pattern = new RegExp(query, "i");
 
   // Use the filter method to create an array of matching Link objects
   const matches = Object.values(links).filter((link) =>
-    link.text.includes(query)
+    link.text.match(pattern)
   );
 
   // Use the forEach method to apply the highlight and show methods to the matching Link objects
@@ -124,6 +128,17 @@ const superindexSearch = (e) => {
 
   // Use the forEach method to apply the hide method to the non-matching Link objects
   hiddenLinks.forEach((link) => link.hide());
+
+  [...dds].forEach((dd) => {
+    if ([...dd.childNodes].every((a) => a.className === "d-none")) {
+      dd.className = "d-none";
+      dd.previousElementSibling.className = "d-none";
+      return;
+    }
+
+    dd.className = "";
+    dd.previousElementSibling.className = "";
+  });
 };
 
 const debounce = (cb, delay = 250) => {

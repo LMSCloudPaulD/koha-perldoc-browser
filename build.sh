@@ -46,12 +46,12 @@ cp kohaPerldoc.js docs/ || exit 1
 # Define a bash function to handle the iteration over the files in the docs directory and its subdirectories
 iterate_files() {
     # Iterate over all files and directories in the docs directory recursively
-    find "$SCRIPT_PATH/docs/**" -type f | while read -r file; do
+    find "$SCRIPT_PATH/docs" -mindepth 2 -type f | while read -r file; do
         # If the file is an HTML file
         if [[ $file == *.html ]]; then
             # Use the dirname command to remove the last two directories from the file path
             # Use the realpath command to convert the relative path to a canonical path
-            css_path=$(realpath --canonicalize-missing --relative-to="$(dirname "$(dirname "$file")")" "$SCRIPT_PATH/sub.css")
+            css_path=$(realpath --canonicalize-missing --relative-to="$(dirname "$file" | xargs dirname)" "$SCRIPT_PATH/sub.css")
 
             # Use the awk command to add the canonical path to the href attribute of the link tag
             # Use the '{ print }' action to print each line of the file
@@ -89,6 +89,6 @@ else
 fi
 
 # Add, commit, and push the changes to the repository
-git add . || exit 1
-git commit -m "Pull updates | $DATE" || exit 1
-git push origin main || exit 1
+# git add . || exit 1
+# git commit -m "Pull updates | $DATE" || exit 1
+# git push origin main || exit 1
