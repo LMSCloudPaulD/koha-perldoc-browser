@@ -16,13 +16,15 @@ To generate the Koha documentation, first clone this repository and change into 
 ```bash
 git clone https://github.com/Koha-Community/Koha-Documentation-Generator.git
 cd Koha-Documentation-Generator
-Next, run the build.sh script:
 ```
+
+Next, run the build.sh script:
 
 ```bash
 ./build.sh
-This will clone the Koha repository, generate the documentation, and apply the styles and scripts. The generated documentation will be placed in the docs directory
 ```
+
+This will clone the Koha repository, generate the documentation, and apply the styles and scripts. The generated documentation will be placed in the docs directory
 
 ## GitHub Action
 
