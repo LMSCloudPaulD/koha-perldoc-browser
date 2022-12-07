@@ -14,8 +14,8 @@ The Koha Documentation Generator is a tool for generating documentation for the 
 To generate the Koha documentation, first clone this repository and change into the directory:
 
 ```bash
-git clone https://github.com/Koha-Community/Koha-Documentation-Generator.git
-cd Koha-Documentation-Generator
+git clone https://github.com/LMSCloudPaulD/koha-perldoc-browser.git
+cd koha-perldoc-browser
 ```
 
 Next, run the build.sh script:
