@@ -29,3 +29,5 @@ This will clone the Koha repository, generate the documentation, and apply the s
 The build_docs_update.yml file in the .github/workflows directory defines a GitHub Action that automatically generates the Koha documentation and pushes the changes to the main branch of this repository every six hours. This allows the documentation to be hosted on GitHub Pages at https://lmscloudpauld.github.io/koha-perldoc-browser/.
 
 The Action runs the build.sh script and pushes the generated documentation to the main branch. It also sets git config options and uses the actions/cache action to cache the Koha repository to speed up subsequent runs of the Action.
+
+## Licenses
