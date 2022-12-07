@@ -89,6 +89,6 @@ else
 fi
 
 # Add, commit, and push the changes to the repository
-# git add . || exit 1
-# git commit -m "Pull updates | $DATE" || exit 1
-# git push origin main || exit 1
+git add . || exit 1
+git commit -m "Pull updates | $DATE" || exit 1
+git push origin main || exit 1
