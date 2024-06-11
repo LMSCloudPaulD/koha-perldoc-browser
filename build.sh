@@ -15,7 +15,7 @@ echo "Globals set.."
 # Check if the Koha directory exists
 if [ ! -d "Koha" ]; then
     # Clone the Koha repository from GitHub
-    git clone "$REPOSITORY"
+    git clone --branch main --single-branch "$REPOSITORY"
 
     # Change into the Koha directory
     cd Koha || exit 1
