@@ -28,7 +28,7 @@ echo "Pulling Koha repository"
 
 # Reset the repository to the latest version on origin/master
 # and then pull the latest changes
-git reset --hard origin/master || exit 1
+git reset --hard origin/main || exit 1
 git pull "$REPOSITORY" || exit 1
 
 echo "Changing back into root directory.."
