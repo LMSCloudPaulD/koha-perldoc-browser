@@ -76,7 +76,7 @@ dd > a {
 
 .meta-koha-nav-entry:hover,
 .meta-koha-nav-back-to-top:hover {
-  border: 1px solid #cc0000;
+  border: 2px solid #cc0000;
   background: #cc0000;
   color: white;
 }
